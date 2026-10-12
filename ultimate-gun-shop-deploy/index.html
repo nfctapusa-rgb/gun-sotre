@@ -266,9 +266,9 @@ footer .credit{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line
         <div class="card rv inventory-call-card"><div class="k">Call the shop</div><h3>Ask about availability</h3><p>Give us a call and we'll help answer your questions about what's currently in stock.</p><a class="btn btn-primary" href="tel:+13234771003">Call 323-477-1003</a></div>
       </div>
       <div class="inventory-gallery rv" aria-label="Firearm photo slideshow">
-        <div class="gallery-main"><img id="inventory-slide" src="assets/slide%202.jpg" alt="Example firearm display at Ultimate Gun Shop" loading="lazy"><button class="gallery-arrow gallery-prev" type="button" aria-label="Previous photo">&#10094;</button><button class="gallery-arrow gallery-next" type="button" aria-label="Next photo">&#10095;</button></div>
+        <div class="gallery-main"><img id="inventory-slide" src="assets/slide%205.jpg" alt="Example firearm display at Ultimate Gun Shop" loading="lazy"><button class="gallery-arrow gallery-prev" type="button" aria-label="Previous photo">&#10094;</button><button class="gallery-arrow gallery-next" type="button" aria-label="Next photo">&#10095;</button></div>
         <div class="gallery-dots" id="inventory-dots" aria-label="Choose a photo"><button type="button" aria-label="Show photo 1" class="active"></button><button type="button" aria-label="Show photo 2"></button><button type="button" aria-label="Show photo 3"></button><button type="button" aria-label="Show photo 4"></button></div>
-        <div class="gallery-thumbs"><button class="active" type="button" aria-label="Show photo 1"><img src="assets/slide%202.jpg" alt="" loading="lazy"></button><button type="button" aria-label="Show photo 2"><img src="assets/slide%204.webp" alt="" loading="lazy"></button><button type="button" aria-label="Show photo 3"><img src="assets/slide%203.webp" alt="" loading="lazy"></button><button type="button" aria-label="Show photo 4"><img src="assets/slide%201.jpeg" alt="" loading="lazy"></button></div>
+        <div class="gallery-thumbs"><button class="active" type="button" aria-label="Show photo 1"><img src="assets/slide%205.jpg" alt="" loading="lazy"></button><button type="button" aria-label="Show photo 2"><img src="assets/slide%204.webp" alt="" loading="lazy"></button><button type="button" aria-label="Show photo 3"><img src="assets/slide%203.webp" alt="" loading="lazy"></button><button type="button" aria-label="Show photo 4"><img src="assets/slide%201.jpeg" alt="" loading="lazy"></button></div>
         <p class="gallery-note">Photos are examples only. Call to confirm current availability and pricing.</p>
       </div>
     </div>
@@ -378,7 +378,7 @@ footer .credit{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line
 (function(){
   /* Inventory listings are intentionally not displayed; call the shop for current stock and pricing. */
   (() => {
-    const slides=[{src:'assets/slide%202.jpg',alt:'Example firearm display'},{src:'assets/slide%204.webp',alt:'Example firearm photo'},{src:'assets/slide%203.webp',alt:'Example firearm photo'},{src:'assets/slide%201.jpeg',alt:'Example firearm photo'}];
+    const slides=[{src:'assets/slide%205.jpg',alt:'Example firearm display'},{src:'assets/slide%204.webp',alt:'Example firearm photo'},{src:'assets/slide%203.webp',alt:'Example firearm photo'},{src:'assets/slide%201.jpeg',alt:'Example firearm photo'}];
     const main=document.getElementById('inventory-slide'), dots=[...document.querySelectorAll('#inventory-dots button')], thumbs=[...document.querySelectorAll('.gallery-thumbs button')], prev=document.querySelector('.gallery-prev'), next=document.querySelector('.gallery-next'), gallery=document.querySelector('.inventory-gallery');
     if(!main||!prev||!next||!dots.length||!thumbs.length)return;
     let current=0,timer;
