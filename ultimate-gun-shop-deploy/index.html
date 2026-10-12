@@ -39,7 +39,7 @@ a{color:inherit;text-decoration:none}
 nav{position:sticky;top:0;z-index:40;background:rgba(0,0,0,.96);border-bottom:1px solid var(--line-hi)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:600;letter-spacing:.09em;text-transform:uppercase;font-size:17px;white-space:nowrap}
-.logo img{width:38px;height:38px;border-radius:50%;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 14px rgba(255,255,255,.25)}
+.logo img{width:42px;height:42px;object-fit:contain;object-position:center;background:transparent;padding:0;box-sizing:border-box;display:block;flex-shrink:0}
  .logo img{object-fit:contain;object-position:center center;background:#111; padding:2px; box-sizing:border-box}
  .inventory-layout{display:grid;grid-template-columns:minmax(280px,.8fr) minmax(0,1.2fr);gap:34px;align-items:center}
  .inventory-copy .head{text-align:left;margin:0 0 22px}.inventory-copy .head p{max-width:560px}.inventory-call-card{max-width:520px}
@@ -81,7 +81,7 @@ h1 em{font-style:normal;color:transparent;-webkit-text-stroke:2px #fff;text-shad
 
 /* signature: live status card */
 .status{border:1px solid var(--line-hi);background:linear-gradient(160deg,#181818,#000 60%);border-radius:8px;padding:28px;position:relative;box-shadow:0 0 0 1px rgba(255,255,255,.06),0 24px 60px rgba(255,255,255,.07),inset 0 1px 0 rgba(255,255,255,.4)}
-.badge{width:150px;height:150px;border-radius:50%;margin:0 auto 20px;display:block;box-shadow:0 0 0 2px #fff,0 0 36px rgba(255,255,255,.35)}
+.badge{object-fit:contain;object-position:center;background:transparent;padding:0}
 .pill{display:flex;justify-content:center;align-items:center;gap:9px;font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
 .dot{width:11px;height:11px;border-radius:50%;border:2px solid #fff;background:transparent}
 .pill.open .dot{background:#fff;animation:pulse 2s infinite}
@@ -213,7 +213,7 @@ footer .credit{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line
 <nav>
   <div class="wrap">
     <a href="#top" class="logo" aria-label="Ultimate Gun Shop">
-      <img src="assets/ugs.jpg" alt="">
+      <img src="assets/ultimate-gun-shop-logo-transparent.png" alt="">
       Ultimate Gun Shop
     </a>
     <div class="links">
@@ -239,7 +239,7 @@ footer .credit{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line
     </div>
 
     <div class="status rv">
-      <img class="badge" src="assets/ugs.jpg" alt="Ultimate Gun Shop">
+      <img class="badge" src="assets/ultimate-gun-shop-logo-transparent.png" alt="Ultimate Gun Shop">
       <div class="pill" id="pill"><span class="dot"></span><span id="pillText">Checking hours</span></div>
       <h2 id="statusHead">Ultimate Gun Shop</h2>
       <p class="s" id="statusSub">3538 W Beverly Blvd, Ste A</p>
@@ -371,7 +371,7 @@ footer .credit{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line
   <div class="wrap">
     <div class="legal">Licensed firearms dealer. All sales and transfers are conducted in person and follow federal and California law. Valid ID and eligibility required. Firearms are not sold or shipped online.</div>
     <div class="cols">
-      <a href="#top" class="logo"><img src="assets/ugs.jpg" alt="">Ultimate Gun Shop</a>
+      <a href="#top" class="logo"><img src="assets/ultimate-gun-shop-logo-transparent.png" alt="">Ultimate Gun Shop</a>
       <span>3538 W Beverly Blvd, Ste A, Montebello, CA 90640 &nbsp;·&nbsp; 323-477-1003</span>
     </div>
     <div class="credit">Powered by <a href="https://goodtable.us" target="_blank" rel="noopener noreferrer">GoodTable.us</a></div>
